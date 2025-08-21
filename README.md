@@ -2,7 +2,7 @@
 #### Michael Herf, 2022-2025
 
 #### Update: comparing electric lighting spectra to moonlight
-We are adding here the ability to reproduce the results of a recent paper that considers moonlight as a reference nighttime illuminant (with Travis Longcore) to simulate impacts of electric lighting on wildlife. So the [econightlight](herf/specwork/tree/master/econightlight) folder is now included as a demo dataset here, and the Makefile will let you run some tests on it.
+We are adding the ability to use this code to reproduce the results of a recent paper  (with Travis Longcore) that considers moonlight as a reference nighttime illuminant to simulate impacts of electric lighting on wildlife. So the [econightlight](https://github.com/herf/specwork/tree/master/econightlight) folder is now included as a demo dataset here, and the Makefile will let you run some tests on it.
 
 To use the econightlight data, you should have a modern Node.js, and you can convert provided spectra to 1nm using the Sprague resampler:
 > make res
