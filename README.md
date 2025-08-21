@@ -1,12 +1,15 @@
 ## Specwork
-#### Michael Herf, 2022
+#### Michael Herf, 2022-2025
 
-This repo has some small "spectral" tools including [CIE-recommended Sprague upsampling](https://github.com/herf/specwork/blob/master/sprague.js) for work with spectral irradiance data. This is one of the resamplers used in our f.luxometer project. It is based on the code from Westland but fixes a couple epsilon bugs (so that edge cases are handled properly).
+#### Update: comparing electric lighting spectra to moonlight
+We are adding here the ability to reproduce the results of a recent paper that considers moonlight as a reference nighttime illuminant (with Travis Longcore) to simulate impacts of electric lighting on wildlife. So the [econightlight](herf/specwork/tree/master/econightlight) folder is now included as a demo dataset here, and the Makefile will let you run some tests on it.
 
-It was mostly developed to process spectra from Travis Longcore's dataset here: https://github.com/tlongcore/econightlight, which you should probably fetch in parallel to this repo.
-
-If you have the econightlight data, you can convert provided spectra to 1nm using the Sprague resampler:
+To use the econightlight data, you should have a modern Node.js, and you can convert provided spectra to 1nm using the Sprague resampler:
 > make res
 
 You can run some test routines simply with any modern Node.js and a simple Makefile, as:
 > make
+
+#### Spectral tools and good resamplers
+
+This repo was originally created to provide general-purpose "spectral" tools including [CIE-recommended Sprague upsampling](https://github.com/herf/specwork/blob/master/sprague.js) for work with spectral irradiance data, since often spectral data is at many resolutions and it needs to be resampled to be used with action spectra and for other purposes. Here we provide code to do "good" 1nm upsampling, based on one of the resamplers used in our f.luxometer project. It is based on the code from Westland but fixes a couple epsilon bugs (so that edge cases are handled properly).
