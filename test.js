@@ -18,14 +18,14 @@ function getLux(spd) {
 function TravisRun() {
 
 	// consider these species
-	var as1 = ParseFile("../econightlight/AmbystomaSensitivity.csv")
-	var as2 = ParseFile("../econightlight/ThomomysbottaeSensitivity.csv")
+	var as1 = ParseFile("./econightlight/AmbystomaSensitivity.csv")
+	var as2 = ParseFile("./econightlight/ThomomysbottaeSensitivity.csv")
 
 	var act = [as1, as2];
 
 	// and these lights vs. the moon:
-	var spd = ParseFile("../econightlight/SPD.csv")
-	var lunar = ParseFile("../econightlight/lunarpower.csv")
+	var spd = ParseFile("./econightlight/SPD.csv")
+	var lunar = ParseFile("./econightlight/lunarpower.csv")
 
 	//console.log(spd);
 
