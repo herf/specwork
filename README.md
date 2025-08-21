@@ -10,7 +10,7 @@ To use the econightlight data, you should have a modern Node.js, and you can con
 You can run some test routines simply with any modern Node.js and a simple Makefile, as:
 > make
 
-This "moonlight" approach follows our [JEZ-A paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/jez.2184) which used D65 (daylight) as a reference illuminant, and the "calc.js" file is included from the [ecological](https://github.com/herf/specwork/tree/master/ecological) repo.
+This "moonlight" approach follows our [JEZ-A paper](https://onlinelibrary.wiley.com/doi/abs/10.1002/jez.2184) which used D65 (daylight) as a reference illuminant, and the "calc.js" file is included from the [ecological](https://github.com/herf/ecological) repo.
 
 #### Spectral tools and good resamplers
 
